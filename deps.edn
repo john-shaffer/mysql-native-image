@@ -1,0 +1,35 @@
+{:deps {org.clojure/clojure {:mvn/version "1.10.3"}
+        mysql/mysql-connector-java {:mvn/version "8.0.25"}
+        com.github.seancorfield/next.jdbc {:mvn/version "1.2.659"}}
+ :aliases {:depstar
+           {:replace-deps
+            {com.github.seancorfield/depstar {:mvn/version "2.0.216"}}
+            :ns-default hf.depstar
+            :exec-args {}}
+           :native-image
+           {:exec-args
+            {:main-ns "mysql-native-image"
+             :opts
+             ["-H:EnableURLProtocols=http,https"
+              "-H:Name=target/mysql-native-image"
+              "-H:ReflectionConfigurationFiles=reflect-config.json"
+              "-H:+ReportExceptionStackTraces"
+              "-H:TraceClassInitialization=*"
+              "--allow-incomplete-classpath"
+              "--enable-all-security-services"
+              "--initialize-at-build-time"
+              "--initialize-at-run-time=com.mysql.cj.jdbc.AbandonedConnectionCleanupThread"
+              "--initialize-at-run-time=com.mysql.cj.jdbc.AbandonedConnectionCleanupThread.AbandonedConnectionCleanupThread"
+              "--initialize-at-run-time=com.mysql.cj.jdbc.Driver"
+              "--initialize-at-run-time=com.mysql.cj.jdbc.NonRegisteringDriver"
+              "--initialize-at-run-time=java.sql.DriverManager"
+              "--no-fallback"
+              "--no-server"
+              "--report-unsupported-elements-at-runtime"]}
+            :exec-fn native/build
+            :jvm-opts ["-Dclojure.compiler.direct-linking=true"]
+            :extra-deps
+            {cheshire/cheshire {:mvn/version "5.10.0"}
+             clj.native-image/clj.native-image
+             {:git/url "https://github.com/taylorwood/clj.native-image.git"
+              :sha "4604ae76855e09cdabc0a2ecc5a7de2cc5b775d6"}}}}}
