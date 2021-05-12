@@ -10,7 +10,8 @@
            {:exec-args
             {:main-ns "mysql-native-image"
              :opts
-             ["-H:EnableURLProtocols=http,https"
+             ["-H:+AddAllCharsets"
+              "-H:EnableURLProtocols=http,https"
               "-H:Name=target/mysql-native-image"
               "-H:ReflectionConfigurationFiles=reflect-config.json"
               "-H:+ReportExceptionStackTraces"
