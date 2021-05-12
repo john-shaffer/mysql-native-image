@@ -24,7 +24,6 @@
               "--initialize-at-run-time=com.mysql.cj.jdbc.NonRegisteringDriver"
               "--initialize-at-run-time=java.sql.DriverManager"
               "--no-fallback"
-              "--no-server"
               "--report-unsupported-elements-at-runtime"]}
             :exec-fn native/build
             :jvm-opts ["-Dclojure.compiler.direct-linking=true"]
