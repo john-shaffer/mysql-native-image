@@ -1,4 +1,5 @@
-.cpcache
+.cpcache/
+.direnv/
 .nrepl-port
 agent
 classes
