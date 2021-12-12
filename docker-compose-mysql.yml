@@ -1,0 +1,13 @@
+version: "2.1"
+services:
+  mysql:
+    image: docker.io/library/mysql:8.0.27@sha256:eb791004631abe3bf842b3597043318d19a91e8c86adca55a5f6d4d7b409f2ac
+    container_name: mysql
+    environment:
+      - PUID=1000
+      - PGID=1000
+      - MYSQL_DATABASE=native_image
+      - MYSQL_ROOT_PASSWORD=local
+      - TZ=Europe/London
+    ports:
+      - 3306:3306
