@@ -5,7 +5,6 @@
 (def exception-class-names
   ["com.mysql.cj.exceptions.AssertionFailedException"
    "com.mysql.cj.exceptions.CJCommunicationsException"
-   "com.mysql.cj.exceptions.CJConnectionFeatureNotAvailableException"
    "com.mysql.cj.exceptions.CJException"
    "com.mysql.cj.exceptions.CJOperationNotSupportedException"
    "com.mysql.cj.exceptions.CJPacketTooBigException"
@@ -15,7 +14,6 @@
    "com.mysql.cj.exceptions.DataConversionException"
    "com.mysql.cj.exceptions.DataReadException"
    "com.mysql.cj.exceptions.DataTruncationException"
-   "com.mysql.cj.exceptions.DeadlockTimeoutRollbackMarker"
    "com.mysql.cj.exceptions.FeatureNotAvailableException"
    "com.mysql.cj.exceptions.InvalidConnectionAttributeException"
    "com.mysql.cj.exceptions.NumberOutOfRange"
@@ -25,7 +23,6 @@
    "com.mysql.cj.exceptions.RSAException"
    "com.mysql.cj.exceptions.SSLParamsException"
    "com.mysql.cj.exceptions.StatementIsClosedException"
-   "com.mysql.cj.exceptions.StreamingNotifiable"
    "com.mysql.cj.exceptions.UnableToConnectException"
    "com.mysql.cj.exceptions.UnsupportedConnectionStringException"
    "com.mysql.cj.exceptions.WrongArgumentException"])

@@ -17,12 +17,6 @@
     "parameterTypes" : [ "java.lang.String" ]
   } ]
 }, {
-  "name" : "com.mysql.cj.exceptions.CJConnectionFeatureNotAvailableException",
-  "methods" : [ {
-    "name" : "<init>",
-    "parameterTypes" : [ "java.lang.String" ]
-  } ]
-}, {
   "name" : "com.mysql.cj.exceptions.CJException",
   "methods" : [ {
     "name" : "<init>",
@@ -77,12 +71,6 @@
     "parameterTypes" : [ "java.lang.String" ]
   } ]
 }, {
-  "name" : "com.mysql.cj.exceptions.DeadlockTimeoutRollbackMarker",
-  "methods" : [ {
-    "name" : "<init>",
-    "parameterTypes" : [ "java.lang.String" ]
-  } ]
-}, {
   "name" : "com.mysql.cj.exceptions.FeatureNotAvailableException",
   "methods" : [ {
     "name" : "<init>",
@@ -132,12 +120,6 @@
   } ]
 }, {
   "name" : "com.mysql.cj.exceptions.StatementIsClosedException",
-  "methods" : [ {
-    "name" : "<init>",
-    "parameterTypes" : [ "java.lang.String" ]
-  } ]
-}, {
-  "name" : "com.mysql.cj.exceptions.StreamingNotifiable",
   "methods" : [ {
     "name" : "<init>",
     "parameterTypes" : [ "java.lang.String" ]
