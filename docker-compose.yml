@@ -1,7 +1,7 @@
 version: "2.1"
 services:
   mariadb:
-    image: ghcr.io/linuxserver/mariadb
+    image: docker.io/library/mariadb:10.7.1@sha256:528cfe83d93caba437e75039b606a4637dd5c724c6a25d7c7b64ec2e9eb11303
     container_name: mariadb
     environment:
       - PUID=1000
