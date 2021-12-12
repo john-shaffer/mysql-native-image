@@ -16,7 +16,6 @@
               "-H:ReflectionConfigurationFiles=reflect-config.json"
               "-H:+ReportExceptionStackTraces"
               "-H:TraceClassInitialization=*"
-              "--allow-incomplete-classpath"
               "--enable-all-security-services"
               "--initialize-at-build-time"
               "--initialize-at-run-time=com.mysql.cj.jdbc.AbandonedConnectionCleanupThread"
@@ -24,8 +23,7 @@
               "--initialize-at-run-time=com.mysql.cj.jdbc.Driver"
               "--initialize-at-run-time=com.mysql.cj.jdbc.NonRegisteringDriver"
               "--initialize-at-run-time=java.sql.DriverManager"
-              "--no-fallback"
-              "--report-unsupported-elements-at-runtime"]}
+              "--no-fallback"]}
             :exec-fn native/build
             :jvm-opts ["-Dclojure.compiler.direct-linking=true"]
             :extra-deps
